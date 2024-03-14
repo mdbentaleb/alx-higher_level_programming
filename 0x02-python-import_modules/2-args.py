@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-
-
     arg = len(sys.argv)
     print("{} ".format(arg - 1), end="")
     if arg == 1:
