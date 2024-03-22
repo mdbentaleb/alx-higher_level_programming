@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
         return 0
 
     nbr = len(roman_string)
-    val_int = rmns[roman_string[number-1]]
+    val_int = rmns[roman_string[nbr-1]]
     for j in range(nbr - 1, 0, -1):
         current_val = rmns[roman_string[j]]
         previous_val = rmns[roman_string[j-1]]
