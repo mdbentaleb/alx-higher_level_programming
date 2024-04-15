@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""checks if an object is an instance of a specified class"""
+"""check if object if instance of a class"""
 
 
-def is_same_class(obj, a_class):
-    """return True if obj is instance of a_class"""
-    j = type(obj)
-    if j == a_class:
-        return True
-    return False
+def inherits_from(obj, a_class):
+    """return True if object is an instance of a class that
+    inherited from specified class"""
+    if issubclass(obj.__class__, a_class) is True:
+        if obj.__class__ is not a_class:
+            return True
+    else:
+        return False
